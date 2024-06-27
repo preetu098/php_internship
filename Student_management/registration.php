@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <h2 class="mt-5">Register</h2>
-    <form method="POST" action="">
+    <form method="POST" action="controller/register_data.php">
         <div class="form-group">
             <label for="username">Username:</label>
             <input type="text" class="form-control" id="username" name="username" required>

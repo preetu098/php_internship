@@ -15,10 +15,10 @@
   <body>
   <div class="container">
     <h2 class="mt-5">Login</h2>
-    <form method="POST" action="">
+    <form method="POST" action="controller/login_validate.php">
         <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" class="form-control" id="username" name="username" required>
+            <label for="username">Email:</label>
+            <input type="email" class="form-control" id="username" name="email" required>
         </div>
         <div class="form-group">
             <label for="password">Password:</label>
