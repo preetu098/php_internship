@@ -8,7 +8,7 @@
     $count=mysqli_num_rows($res);
     if($count==1)
     {
-        echo "login succesfully";
+        header('location:../profile.php');
     }
     else 
     {
