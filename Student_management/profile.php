@@ -24,16 +24,19 @@
                 </tr>
 
                 <?php
+                
                     $sql="select * from tb_student";
                     $res=mysqli_query($conn,$sql);
                     while($row=mysqli_fetch_assoc($res))
                     {
+                      
                         ?>
                         <tr>
                             <td><?php echo $row['name']?></td>
                             <td><?php echo $row['email']?></td>
                             <td><?php echo $row['password']?></td>
-                            <td><button class="btn btn-primary">Edit</button>
+                            <td> 
+                                <a href="edit_data.php?id=<?php echo $row['id']?>"><button class="btn btn-primary">Edit</button></a>
                             
                             <a href="controller/delete_data.php?id=<?php echo $row['id']?>"><button class="btn btn-danger">Delete</button></a>
                         
